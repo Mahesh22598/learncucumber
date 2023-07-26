@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="89.080403">
+    <testcase classname="Book cart application" name="add to cart" time="51.821845">
+        <failure message="java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)&quot; because &quot;steps.addcartSteps.wait&quot; is null&#13;&#10;&#9;at steps.addcartSteps.userShouldLoginAsAnd(addcartSteps.java:27)&#13;&#10;&#9;at ✽.user should login as &quot;mahi22&quot; and &quot;A12345b@&quot;(src\test\java\features\addcart.feature:8)&#13;&#10;"><![CDATA[Given user should navigate the applicatin...................................passed
+Given user should navigate the applicatin...................................passed
+And user should login as "mahi22" and "A12345b@"............................failed
+And user search a "Catching Fire"...........................................skipped
+When user add the book to the cart..........................................skipped
+Then the cart number is change..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "steps.addcartSteps.wait" is null
+	at steps.addcartSteps.userShouldLoginAsAnd(addcartSteps.java:27)
+	at ✽.user should login as "mahi22" and "A12345b@"(src\test\java\features\addcart.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Book cart application" name="add to cart 2" time="37.258558">
+        <failure message="java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)&quot; because &quot;steps.addcartSteps.wait&quot; is null&#13;&#10;&#9;at steps.addcartSteps.userShouldLoginAsAnd(addcartSteps.java:27)&#13;&#10;&#9;at ✽.user should login as &quot;king22&quot; and &quot;A123456b@&quot;(src\test\java\features\addcart.feature:8)&#13;&#10;"><![CDATA[Given user should navigate the applicatin...................................passed
+Given user should navigate the applicatin...................................passed
+And user should login as "king22" and "A123456b@"...........................failed
+And user search a "Red Rising"..............................................skipped
+When user add the book to the cart..........................................skipped
+Then the cart number is change..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "steps.addcartSteps.wait" is null
+	at steps.addcartSteps.userShouldLoginAsAnd(addcartSteps.java:27)
+	at ✽.user should login as "king22" and "A123456b@"(src\test\java\features\addcart.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>
